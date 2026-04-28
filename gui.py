@@ -14,7 +14,7 @@ st.title("📊 ML Dashboard")
 BASE_DIR = "model"
 
 sales_model = joblib.load(os.path.join(BASE_DIR, "sales_model.pkl"))
-fraud_model = joblib.load(os.path.join(BASE_DIR, "fraud_model.pkl"))
+fraud_model = joblib.load(os.path.join(BASE_DIR, "anomalies_model.pkl"))
 fraud_scaler = joblib.load(os.path.join(BASE_DIR, "fraud_scaler.pkl"))
 
 menu = st.sidebar.radio("Menu", ["📈 Sales", "🚨 Fraud"])
